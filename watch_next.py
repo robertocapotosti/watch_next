@@ -14,6 +14,7 @@ def load_movies():
 		fields = line.split(":")
 		fields[0] = fields[0].strip()
 		fields[1] = fields[1].strip()
+		fields.append(0.0)
 		movies.append(fields)
 	f_movies.close()
 
